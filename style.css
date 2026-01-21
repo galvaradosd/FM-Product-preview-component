@@ -1,0 +1,172 @@
+/* ========================================
+   CSS RESET
+   ======================================== */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove button styles */
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/* ========================================
+   CSS CUSTOM PROPERTIES
+   ======================================== */
+
+:root {
+	/* ===== COLORS ===== */
+
+	/* Primary Colors */
+	--color-primary-green-500: hsl(158, 36%, 37%);
+	--color-primary-green-700: hsl(158, 42%, 18%);
+
+	/* Neutral Colors */
+	--color-neutral-black: hsl(212, 21%, 14%);
+	--color-neutral-grey: hsl(228, 12%, 48%);
+	--color-neutral-cream: hsl(30, 38%, 92%);
+	--color-neutral-white: hsl(0, 0%, 100%);
+
+	/* ===== TYPOGRAPHY ===== */
+
+	/* Font Families */
+	--font-family-primary: "Montserrat", sans-serif;
+	--font-family-accent: "Fraunces", serif;
+
+	/* Font Weights */
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+
+	/* Font Sizes */
+	--font-size-body: 0.875rem; /* 14px */
+	--font-size-category: 0.75rem; /* 12px */
+	--font-size-title: 2rem; /* 32px */
+	--font-size-price: 2rem; /* 32px */
+	--font-size-price-old: 0.8125rem; /* 13px */
+	--font-size-button: 0.875rem; /* 14px */
+
+	/* Line Heights */
+	--line-height-body: 1.64;
+	--line-height-heading: 1;
+	--line-height-button: 1;
+
+	/* Letter Spacing */
+	--letter-spacing-category: 0.3125rem; /* 5px */
+	--letter-spacing-normal: 0;
+
+	/* ===== SPACING ===== */
+
+	/* Spacing Scale */
+	--space-xs: 0.75rem; /* 12px */
+	--space-sm: 1rem; /* 16px */
+	--space-md: 1.25rem; /* 20px */
+	--space-lg: 1.5rem; /* 24px */
+	--space-xl: 2rem; /* 32px */
+	--space-2xl: 2.5rem; /* 40px */
+
+	/* Component Spacing */
+	--card-padding: var(--space-lg);
+	--card-padding-desktop: var(--space-xl);
+	--card-gap: var(--space-sm);
+	--button-padding-block: var(--space-sm);
+	--button-padding-inline: var(--space-lg);
+
+	/* ===== BORDERS ===== */
+
+	--border-radius-card: 0.625rem; /* 10px */
+	--border-radius-button: 0.5rem; /* 8px */
+
+	/* ===== BREAKPOINTS ===== */
+
+	/* Note: Use these in @media queries */
+	--breakpoint-mobile: 375px;
+	--breakpoint-desktop: 1440px;
+	--breakpoint-min: 320px;
+
+	/* ===== TRANSITIONS ===== */
+
+	--transition-default: 0.3s ease;
+	--transition-fast: 0.15s ease;
+}
