@@ -196,7 +196,7 @@ body {
 }
 
 .container {
-	min-block-size: 100vh;
+	min-block-size: calc(100vh - 60px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -421,4 +421,28 @@ body {
 	.container {
 		padding: var(--space-xl);
 	}
+}
+
+/* ========================================
+   ATTRIBUTION / FOOTER
+   ======================================== */
+
+.attribution {
+	font-size: 0.7rem;
+	text-align: center;
+	padding-block: var(--space-md);
+	color: var(--color-neutral-grey);
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+	font-weight: var(--font-weight-medium);
+	transition: color var(--transition-fast);
+}
+
+.attribution a:hover,
+.attribution a:focus-visible {
+	color: var(--color-primary-green-500);
+	text-decoration: underline;
 }
